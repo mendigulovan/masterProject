@@ -1,0 +1,22 @@
+Bounded Context: Organizer
+Aggregate: Event
+Events:
+	-HackathonEventCreated: Organisator erstellt eine Hackathon-Veranstaltung 
+	-SponsorApplicationAccepted: Organisator bestätigt Bewerbung von neue Sponsor
+	-SponsorApplicationRejected: Organisator ablehnt Bewerbung von neue Sponsor
+	
+
+Bounded Context: Sponsor
+Aggregate: Sponsor
+Events:
+	-SponsorApplied: Sponsor bewerbt sich an Hackathon-Veranstaltung
+	-PackageChosen: Sponsor wählt ein Paket aus
+	
+
+Bounded Context: Participant
+Aggregate: Participant
+Events:
+	-ParticipantRegistrated: Ein Teilnehmer registriert sich an Hackathon-Veranstaltung
+	-ParticipantDetailsFilledOut:Ein Teilnehmer füllt benötigte Daten aus.
+	
+	
